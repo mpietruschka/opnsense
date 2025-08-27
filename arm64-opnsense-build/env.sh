@@ -11,7 +11,7 @@ SRC_DIR=opnsense-confs
 
 ROOTDIR=/usr
 DATE="+%Y-%m-%d_%H:%M:%S"
-DEVICE=ARM64
+DEVICE=R6S
 HOST=`hostname`
 IMAGE_SIZE=3G
 LOGDIR=/root/opnsense-dev/
