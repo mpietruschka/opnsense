@@ -34,8 +34,8 @@ cd $CURRENT_DIR
 echo "Copy R5S conf files"
 cp $SRC_DIR/R6S.conf $SRC_DIR/R5S_USB.conf $SRC_DIR/R5S_UBOOT.conf $SRC_DIR/R5S_EDK2.conf /usr/tools/device
 
-echo "Copy custom rc file"
-cp $SRC_DIR/usr-core-src-etc-rc /usr/core/src/etc/rc
+#echo "Copy custom rc file"
+#cp $SRC_DIR/usr-core-src-etc-rc /usr/core/src/etc/rc
 
 #echo "Copy custom .conf files"
 #cp $SRC_DIR/extras.conf $SRC_DIR/plugins.conf $SRC_DIR/ports.conf /usr/tools/config/$VERSION/
@@ -48,6 +48,9 @@ cp -Rv edk2-nanopi-r5s /usr/local/share/edk2/
 # install needed packages
 echo pkg install u-boot-nanopi-r4s u-boot-nanopi-r5s
 pkg install u-boot-nanopi-r4s u-boot-nanopi-r5s
+
+mkdir -p /usr/local/share/u-boot/u-boot-nanopi-r6s/
+curl -O -L https://github.com/edk2-porting/edk2-rk3588/releases/download/v1.1/nanopi-r6s_UEFI_Release_v1.1.img /usr/local/share/u-boot/u-boot-nanopi-r6s/nanopi-r6s_UEFI.img
 
 echo "==> About custom .conf build files"
 echo " As in every new version there can be new lines on the files, they are not copied by default anymore. As a hint, compare files to the ones from this repository and adjust as needed."
