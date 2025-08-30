@@ -50,7 +50,7 @@ echo pkg install u-boot-nanopi-r4s u-boot-nanopi-r5s
 pkg install u-boot-nanopi-r4s u-boot-nanopi-r5s
 
 mkdir -p /usr/local/share/u-boot/u-boot-nanopi-r6s/
-curl -O -L https://github.com/edk2-porting/edk2-rk3588/releases/download/v1.1/nanopi-r6s_UEFI_Release_v1.1.img /usr/local/share/u-boot/u-boot-nanopi-r6s/nanopi-r6s_UEFI.img
+curl -L https://github.com/edk2-porting/edk2-rk3588/releases/download/v1.1/nanopi-r6s_UEFI_Release_v1.1.img > /usr/local/share/u-boot/u-boot-nanopi-r6s/nanopi-r6s_UEFI.img
 
 echo "==> About custom .conf build files"
 echo " As in every new version there can be new lines on the files, they are not copied by default anymore. As a hint, compare files to the ones from this repository and adjust as needed."
