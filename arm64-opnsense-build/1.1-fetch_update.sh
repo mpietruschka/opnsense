@@ -32,7 +32,7 @@ pkg lock pkg
 cd $CURRENT_DIR
 
 echo "Copy R5S conf files"
-cp $SRC_DIR/R5S_USB.conf $SRC_DIR/R5S_UBOOT.conf $SRC_DIR/R5S_EDK2.conf /usr/tools/device
+cp $SRC_DIR/R6S.conf $SRC_DIR/R5S_USB.conf $SRC_DIR/R5S_UBOOT.conf $SRC_DIR/R5S_EDK2.conf /usr/tools/device
 
 echo "Copy custom rc file"
 cp $SRC_DIR/usr-core-src-etc-rc /usr/core/src/etc/rc
