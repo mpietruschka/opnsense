@@ -6,6 +6,9 @@
 
 cd /usr/core
 
+#git config --global user.email "you@example.com"
+#git config --global user.name "Your Name"
+
 git checkout -b ${TAG_SRC}-local ${TAG_SRC}
 # rc script already copied
 git add -f src/etc/pkg/fingerprints/OPNsense/trusted/apartnet
